@@ -17,3 +17,11 @@ you prefer.
 ##### Tag Cloud:
 ghost.tagcloud.js also based on same concept, in this we parse RSS to pull in only the tags from the posts and build a
 url pattern for those tags and display them as a list/cloud whichever way you prefer.
+
+
+
+## Credits
+
+* Built over [jquery.ghostrelated](https://github.com/danecando/jquery.ghostrelated) - *simple plugin to get related
+ posts*
+* [Dane Grant](https://github.com/danecando)
