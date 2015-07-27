@@ -6,7 +6,7 @@
  */
 ;(function($) {
 
-    var defaults = {
+    var get_defaults = {
         feed: '/rss',
         titleClass: '.post-title',
         tagsClass: '.post-meta',
@@ -18,7 +18,7 @@
     function RelatedPosts(element, options) {
 
         this.element = element;
-        this.options = $.extend({}, defaults, options);
+        this.options = $.extend({}, get_defaults, options);
 
         this.parseRss();
     };
