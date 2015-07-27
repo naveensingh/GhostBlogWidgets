@@ -20,13 +20,16 @@ url pattern for those tags and display them as a list/cloud whichever way you pr
 
 #### Installation:
 
-1. Download the js files and save whichever plugin you want to use it in your theme directory.
-2. Include the script below `{{ghost_foot}}` in your themes default.hbs file `<script src="/assets/js/jquery.ghostrelated.min.js"></script>`
+* Download the js files and save whichever plugin you want to use it in your theme directory.
+* Include the script below `{{ghost_foot}}` in your themes default.hbs file `<script src="/assets/js/jquery
+.ghostrelated.min.js"></script>`
 ```html
 {{! Ghost outputs important scripts and data with this tag (jquery is included in ghost_foot) }}
 {{ghost_foot}}
 ```
-3. Add an ordered or unordered list with a class identifier (related-posts is the default class identifier) in your post.hbs template file.
+* Add an ordered or unordered list with a class identifier (related-posts is the default class identifier) in your
+post.hbs template file.
+
 ```html
     <ul class="related-posts">
     </ul>
@@ -34,17 +37,15 @@ url pattern for those tags and display them as a list/cloud whichever way you pr
     </ul>
     <ul class="latest-posts">
     </ul>
-</footer>
-{{/post}}
 ```
 
-4. Call the ghostrelated plugin on the list class identifier that you created in step 3 somewhere in your main js file
+* Call the ghostrelated plugin on the list class identifier that you created in step 3 somewhere in your main js file
 ```javascript
 	$('.related-posts').ghostRelated();
 	$('.mytag-class').ghostTags();
 	$('.latest-posts').ghostGetAllPosts();
 ```
-5. Limit:
+* Limit:
 
 Limit amount of related posts to be displayed
 
