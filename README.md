@@ -49,6 +49,17 @@ post.hbs template file.
 
 Limit amount of related posts to be displayed
 
+```
+	var get_latest_post_defaults = {
+        feed: '/rss',
+        titleClass: '.post-title',
+        tagsClass: '.post-meta',
+        limit: 5, // limit the number of posts
+        debug: false
+    };
+
+```
+
 #### Credits
 
 * Built over [jquery.ghostrelated](https://github.com/danecando/jquery.ghostrelated) - *simple plugin to get related
