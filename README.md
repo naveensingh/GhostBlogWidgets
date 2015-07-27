@@ -18,7 +18,7 @@ you prefer.
 ghost.tagcloud.js also based on same concept, in this we parse RSS to pull in only the tags from the posts and build a
 url pattern for those tags and display them as a list/cloud whichever way you prefer.
 
-#### Installation
+#### Installation:
 
 1. Download the js files and save whichever plugin you want to use it in your theme directory.
 2. Include the script below `{{ghost_foot}}` in your themes default.hbs file `<script src="/assets/js/jquery.ghostrelated.min.js"></script>`
@@ -26,8 +26,6 @@ url pattern for those tags and display them as a list/cloud whichever way you pr
 {{! Ghost outputs important scripts and data with this tag (jquery is included in ghost_foot) }}
 {{ghost_foot}}
 ```
-
-
 3. Add an ordered or unordered list with a class identifier (related-posts is the default class identifier) in your post.hbs template file.
 ```html
     <ul class="related-posts">
@@ -42,12 +40,10 @@ url pattern for those tags and display them as a list/cloud whichever way you pr
 
 4. Call the ghostrelated plugin on the list class identifier that you created in step 3 somewhere in your main js file
 ```javascript
-$('.related-posts').ghostRelated();
-$('.mytag-class').ghostTags();
-$('.latest-posts').ghostGetAllPosts();
+	$('.related-posts').ghostRelated();
+	$('.mytag-class').ghostTags();
+	$('.latest-posts').ghostGetAllPosts();
 ```
-
-
 5. Limit:
 
 Limit amount of related posts to be displayed
