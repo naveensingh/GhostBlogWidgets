@@ -136,7 +136,7 @@
         }
 
         if (posts.length < 1) {
-            this.reportError("Couldn't find any posts in feed: " + feed);
+            this.reportError("Couldn't find any posts in feed: " + self.feed);
         }
 
         return posts;

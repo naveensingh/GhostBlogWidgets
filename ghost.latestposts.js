@@ -84,25 +84,19 @@
         feeds.forEach(function(feed) {
             items = $.merge(items, $(feed).find('item'));
         });
-
         for (var i = 0; i < items.length; i++) {
 
             var item = $(items[i]);
+            posts.push({
+                title: item.find('title').text(),
+                url: item.find('link').text()
+            });
 
-            if (item.find('title').text() !== this.getCurrentPostTitle(this.options.titleClass)) {
-
-                posts.push({
-                    title: item.find('title').text(),
-                    url: item.find('link').text()
-                });
-            }
         }
 
         if (posts.length < 1) {
-            this.reportError("Couldn't find any posts in feed: " + feed);
+            this.reportError("Couldn't find any posts in feed: " + self.feed);
         }
-
-        console.log(posts);
         return posts;
     };
 
